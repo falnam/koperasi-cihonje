@@ -1,0 +1,49 @@
+:root {
+  --color-lightest: #e6e8f2;
+  --color-light: #0575e6;
+  --color-medium: #02298a;
+  --color-dark: #021b79;
+}
+
+.hidden {
+  /* Hide */
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+.mb-1rm {
+  margin-bottom: 1rem;
+}
+
+.mb-2rm {
+  margin-bottom: 2rem;
+}
+
+.mb-4rm {
+  margin-bottom: 4rem;
+}
+
+.mr-1rm {
+  margin-right: 1rem;
+}
+
+.color-light {
+  color: var(--color-light);
+}
+
+.green-tag {
+  color: #6fab23;
+}
+
+.blue-tag {
+  color: #4a88c7;
+}
+
+.yellow-tag {
+  color: #fdbd00;
+}

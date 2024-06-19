@@ -1,0 +1,368 @@
+:root {
+  --color-lightest: #e6e8f2;
+  --color-light: #0575e6;
+  --color-medium: #02298a;
+  --color-dark: #021b79;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+body {
+  color: #495057;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f6f7f8;
+}
+
+.content {
+  padding: 2rem;
+  width: 100%;
+}
+
+/************************/
+/* HEADING */
+/************************/
+.primary-heading {
+  font-size: 3.6rem;
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.5px;
+}
+
+.tertiary-heading {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+}
+
+.fourth-heading {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+}
+
+.sub-heading {
+  font-size: 1.6rem;
+  margin-bottom: 4rem;
+}
+
+/************************/
+/* BUTTON */
+/************************/
+.btn {
+  cursor: pointer;
+  padding: 1.2rem 2.4rem;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 1.6rem;
+  transition: all 0.3s;
+  background-color: var(--color-light);
+  color: white;
+  border: none;
+  text-decoration: none;
+  text-align: center;
+}
+
+/************************/
+/* FORM */
+/************************/
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+input,
+select {
+  border: 1px solid #dde3ec;
+  border-radius: 20px;
+  color: #536387;
+  font-size: 1.6rem;
+  font-weight: 500;
+  outline: none;
+  transition: all 0.3s;
+  padding: 1.2rem 1.2rem 1.2rem 4.2rem;
+  width: 100%;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border: 2px solid var(--color-dark);
+}
+
+select {
+  appearance: none;
+}
+
+::placeholder {
+  opacity: 0.3;
+}
+
+.icon-placeholder svg {
+  opacity: 0.7;
+}
+
+select > option {
+  opacity: 0.5;
+}
+
+/************************/
+/* SIDEBAR */
+/************************/
+.sidebar {
+  position: sticky;
+  top: 2rem;
+  width: 24rem;
+  height: 100vh;
+  box-shadow: 0rem 0.3rem 0.6rem 0rem rgba(0, 0, 0, 0.08);
+  border-radius: 0.5rem;
+  background: #ffffff;
+  padding: 2.2rem;
+  margin: 2rem;
+  z-index: 999999;
+  transition: all 0.7s;
+  /* width: 23%; */
+}
+
+.sidebar p {
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin-bottom: 1.4rem;
+}
+
+.sidebar-links {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1.6rem;
+}
+
+.sidebar-link {
+  list-style: none;
+}
+
+.sidebar-link a {
+  text-decoration: none;
+  color: #495057;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4;
+
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+  transition: all 0.5s;
+}
+
+.sidebar-link a div {
+  width: 2rem;
+}
+
+/* Active Sidebar */
+.active-sidebar {
+  background: linear-gradient(
+    270deg,
+    var(--color-light),
+    var(--color-medium),
+    var(--color-dark)
+  );
+  padding: 1.2rem 0 1.2rem 1rem;
+  width: 22rem;
+  border-radius: 0.3rem;
+  margin-bottom: 0.8rem;
+  z-index: 999;
+}
+
+.active-sidebar a {
+  color: #ffffff;
+  justify-content: start;
+}
+
+.active-sidebar svg path {
+  fill: #ffffff;
+}
+
+/* PLAN C - SIDEBAR HOVER */
+/* .sidebar-link:hover {
+  background: linear-gradient(
+    270deg,
+    var(--color-light),
+    var(--color-medium),
+    var(--color-dark)
+  );
+  padding: 1.2rem 0 1.2rem 1rem;
+  width: 22rem;
+  border-radius: 0.3rem;
+  margin-bottom: 0.8rem;
+  z-index: 999;
+}
+
+.sidebar-link:hover a {
+  color: #ffffff;
+  justify-content: start;
+}
+
+.sidebar-link:hover svg path {
+  fill: #ffffff;
+} */
+
+/* Mobile Sidebar */
+.sidebar-phone {
+  height: 5rem;
+  border: none;
+  background-color: white;
+  border: 1px solid #f6f7f8;
+  box-shadow: 0rem 0.3rem 0.6rem 0rem rgba(0, 0, 0, 0.08);
+  border-radius: 0rem 0.5rem 0.5rem 0rem;
+  padding: 1rem;
+  position: fixed;
+  z-index: 999999;
+  top: 2rem;
+  left: 0;
+  display: none;
+  transition: all 0.3s;
+}
+
+.sidebar-phone-icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar-phone-icon {
+  width: 3rem;
+  height: 3rem;
+}
+
+/************************/
+/* CARD */
+/************************/
+.card {
+  padding: 2.2rem;
+  box-shadow: 0rem 0.3rem 0.6rem 0rem rgba(0, 0, 0, 0.08);
+  border-radius: 0.5rem;
+  background-color: #ffffff;
+}
+
+/************************/
+/* CARD */
+/************************/
+.error-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.error-modal {
+  position: relative !important;
+  transform: none !important;
+}
+
+.error {
+  text-align: center;
+  width: 40rem;
+  padding: 3rem;
+  border: 1px solid black;
+  border-radius: 9px;
+  box-shadow: 0.4rem 0.4rem 0rem 0rem #403a44;
+  background-color: #fff;
+  position: absolute;
+  transform: translate(50%, 50%);
+  z-index: 9999;
+}
+
+.error-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #e75c29;
+}
+.error-message {
+  margin-bottom: 1.8rem;
+}
+
+.btn-error {
+  font-weight: 600;
+  font-size: 1.2rem;
+  background-color: #e75c29;
+  padding: 0.8rem 1.6rem !important;
+}
+
+.btn-error:hover {
+  background-color: #b94a21;
+}
+
+.overlay {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+/************************/
+/* ICON */
+/************************/
+.svg-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-placeholder {
+  height: 100%;
+  width: 2.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  top: 0;
+  left: 10px;
+  position: absolute;
+}
+
+.btn-mobile-nav {
+  display: block;
+  z-index: 9999;
+  padding: 1.4rem;
+  border: none;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0rem 0rem 0.2rem 0rem rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  display: none;
+}
+
+.btn-mobile {
+  width: 4rem;
+}
+
+.btn-close-mobile-nav {
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-25%, 25%);
+}

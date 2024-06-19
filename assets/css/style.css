@@ -1,0 +1,728 @@
+:root {
+  --color-grey-medium: #6c757d;
+  --color-lightest: #e6e8f2;
+  --color-light: #0575e6;
+  --color-medium: #02298a;
+  --color-dark: #021b79;
+}
+
+/************************/
+/* LOGIN */
+/************************/
+.login {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+}
+
+.box {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 9.6rem;
+}
+
+.box-color {
+  background: linear-gradient(
+    var(--color-light),
+    var(--color-medium),
+    var(--color-dark)
+  );
+}
+
+.logo-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: white;
+}
+
+.registrasi-box {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.hallo {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.cta {
+  font-size: 1.6rem;
+}
+
+.form-input {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.btn-login-registrasi:hover {
+  background-color: var(--color-dark);
+}
+
+/************************/
+/* FOOTER */
+/************************/
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 4rem;
+  box-shadow: 0rem 0.3rem 0.6rem 0rem rgba(0, 0, 0, 0.08);
+  justify-content: space-between;
+  font-size: 1.4rem;
+}
+
+.footer-links-box {
+  display: flex;
+  gap: 3rem;
+  justify-self: end;
+}
+
+.footer-link {
+  list-style: none;
+}
+
+.footer-link a:link,
+.footer-link a:visited {
+  text-decoration: none;
+  color: #495057;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.footer-link a:hover,
+.footer-link a:active {
+  color: var(--color-medium);
+}
+
+.link-footer-box p {
+  align-items: flex-end;
+}
+
+.footer hr {
+  grid-column: 1 /-1;
+  border-top: 1px solid rgb(76, 74, 79, 0.3);
+}
+
+.copyright {
+  justify-self: end;
+}
+
+/************************/
+/* BERANDA */
+/************************/
+.beranda-content {
+  display: grid;
+  grid-template-columns: 1.3fr 1.2fr;
+  gap: 2rem;
+}
+
+.hallo-beranda {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.total-beranda {
+  grid-column: 1/-1;
+}
+
+.date-beranda {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: var(--color-grey-medium);
+}
+
+.total-summary {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2.4rem;
+}
+
+.nominal {
+  font-size: 3.2rem;
+  font-weight: 600;
+}
+
+.keterangan {
+  font-size: 1.8rem;
+}
+
+.ricent-transaksi {
+  grid-column: 1/-1;
+  height: 40rem;
+  overflow: auto;
+}
+
+.ricent-transaksi::-webkit-scrollbar {
+  width: 0.7rem;
+  height: 0.5rem;
+}
+
+.ricent-transaksi::-webkit-scrollbar-thumb {
+  border-radius: 0.5rem;
+  background-color: #0002;
+}
+
+.ricent-transaksi:hover:-webkit-scrollbar-thumb {
+  visibility: hidden;
+}
+
+.row-date p {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.row-transaksi {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 4rem;
+  justify-items: center;
+  align-items: center;
+  border-bottom: 1px solid #adb5bd;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.nama-beranda-box {
+  justify-self: flex-start;
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  padding-left: 2rem;
+}
+
+.nama-nasabah-beranda {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.keterangan-arus-kas {
+  color: var(--color-grey-medium);
+  font-size: 1.4rem;
+}
+
+.time-transaksi,
+.nominal-transaksi {
+  color: var(--color-grey-medium);
+  font-size: 1.6rem;
+}
+
+.card-summary {
+  width: 100%;
+}
+
+.year-summary {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 7rem;
+}
+.keterangan-waktu {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.nominal-year-summary {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+/************************/
+/* TRANSAKSI NAVIGATION */
+/************************/
+.navigation {
+  height: 4rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: center;
+  margin-bottom: 4rem;
+}
+
+.search-input {
+  border: 1px solid #dde3ec;
+  border-radius: 20px;
+  color: #536387;
+  font-weight: 500;
+  outline: none;
+  transition: all 0.1s;
+  padding: 1rem;
+  width: 25rem;
+  box-shadow: 0rem 0rem 0.2rem 0rem rgba(0, 0, 0, 0.2);
+}
+
+.right-box-nav {
+  display: flex;
+  gap: 1rem;
+  align-items: stretch;
+}
+
+.btn-add-transaksi,
+.btn-download {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.btn-add-transaksi {
+  font-weight: 600 !important;
+}
+
+.btn-add-transaksi:hover {
+  background-color: var(--color-light);
+}
+
+.btn-add-transaksi,
+.btn-download,
+.btn-time {
+  font-size: 1.2rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s;
+  border-radius: 7px;
+  padding: 1rem 1.8rem;
+  background-color: var(--color-medium);
+  color: #fff;
+  text-align: center;
+  border: none;
+}
+
+.btn-download,
+.btn-time {
+  background-color: #fff;
+  color: black;
+  border: 1px solid #eae7ec;
+}
+
+.btn-group {
+  display: flex;
+  align-items: stretch;
+  height: 100%;
+}
+
+.btn-time {
+  border-radius: 0;
+  transition: all 0.3s;
+}
+
+.btn-time:nth-child(1) {
+  border-radius: 7px 0px 0px 7px;
+}
+
+.btn-time:nth-child(3) {
+  border-radius: 0px 7px 7px 0px;
+}
+
+.btn-time-active {
+  background-color: #eae7ec;
+  color: #908b93;
+  font-weight: 500;
+}
+
+/************************/
+/* TRANSAKSI PAGE */
+/************************/
+
+.tabel-transaksi {
+  width: 100%;
+  font-size: 1.4rem;
+  height: 30rem;
+  background-color: #fff;
+  border-radius: 7px;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+}
+
+table,
+tr,
+td {
+  text-align: center;
+}
+
+table,
+th,
+td {
+  padding: 1rem;
+  border-collapse: collapse;
+}
+
+thead th {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: #f6f7f8;
+  border: 7px;
+  z-index: 9999;
+}
+
+tr {
+  border-bottom: 1px solid #eaecf0;
+}
+
+thead tr {
+  border-bottom: none;
+}
+
+tbody tr {
+  position: relative;
+}
+
+tbody tr td {
+  padding: 1rem 2rem;
+}
+
+tbody tr td .nama-tabel {
+  font-size: 1.4rem;
+}
+
+.nama-karyawan-colom {
+  width: 20rem;
+}
+
+tbody tr td .id {
+  color: #908b93;
+  font-size: 1.2rem;
+}
+
+.row-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.nama-tabel,
+.id {
+  width: 20rem;
+  text-align: center;
+}
+
+.nominal-transaksi {
+  width: 15rem;
+}
+
+.status {
+  padding: 0.4rem 1.6rem;
+  border-radius: 2rem;
+  text-align: center;
+  width: 15rem;
+}
+
+.status span {
+  display: inline-block;
+  margin-right: 0.6rem;
+}
+
+.status.accepted {
+  background-color: #dafed1;
+  color: #59904b;
+}
+
+.status.rejected {
+  background-color: #fbe7e7;
+  color: #c95c5c;
+}
+
+.status.waiting {
+  background-color: #fff8bd;
+  color: #c18e09;
+}
+
+.status.notsent {
+  background-color: #f8f7f9;
+  color: #837e86;
+}
+
+/* Scroll Bar */
+.tabel-transaksi::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.8rem;
+}
+
+.tabel-transaksi::-webkit-scrollbar-thumb {
+  border-radius: 0.5rem;
+  background-color: #0004;
+}
+
+/* .tabel-transaksi:hover:-webkit-scrollbar-thumb {
+  visibility: hidden;
+} */
+
+/************************/
+/* CRUD */
+/************************/
+.option-crud {
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.crud {
+  width: fit-content;
+  padding: 2rem;
+  border: 1px solid black;
+  border-radius: 9px;
+  box-shadow: 0.4rem 0.4rem 0rem 0rem #403a44;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-25%, -25%);
+  z-index: 9999;
+}
+
+.crud-list-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.crud-list-item {
+  list-style: none;
+}
+
+.crud-list-item a {
+  text-decoration: none;
+  color: #403a44;
+  font-size: 1.6rem;
+  font-weight: 500;
+
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 1rem;
+}
+
+.edit-btn:hover path {
+  fill: #021b79;
+}
+.delete-btn:hover path {
+  fill: #e75c29;
+}
+
+/************************/
+/* NASABAH */
+/************************/
+.nasabah-section {
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 2rem;
+}
+
+.nasabah-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1rem;
+  height: 34.5rem;
+  overflow: auto;
+  padding-right: 1rem;
+}
+
+.nasabah-list::-webkit-scrollbar {
+  width: 0.7rem;
+  height: 0.5rem;
+}
+
+.nasabah-list::-webkit-scrollbar-thumb {
+  border-radius: 0.5rem;
+  background-color: #0002;
+}
+
+.nasabah-list:hover:-webkit-scrollbar-thumb {
+  visibility: hidden;
+}
+
+.nasabah {
+  border: 1px solid #e6e7e9;
+  height: 13rem;
+  padding: 1.6rem;
+  border-radius: 7px;
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.nasabah:hover {
+  background-color: #f6f7f8;
+}
+
+.daftar-nasabah-heading {
+  margin-bottom: 1rem;
+  font-size: 1.6rem !important;
+}
+
+.left-box-nasabah,
+.right-box-nasabah {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.left-box-nasabah {
+  gap: 0.6rem;
+}
+
+.right-box-nasabah {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: right;
+}
+
+.nama-nasabah {
+  font-size: 1.8rem !important;
+  font-weight: 600;
+}
+
+.nasabah-section p {
+  font-size: 1.2rem;
+}
+
+.nasabah-section hr {
+  border-top: 1px solid rgb(76, 74, 79, 0.1);
+}
+
+/************************/
+/* REPORTS */
+/************************/
+.reports {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.report-card {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 7px;
+  box-shadow: 0rem 0.3rem 0.6rem 0rem rgba(0, 0, 0, 0.08);
+}
+
+.tabel-laporan {
+  grid-column: 1 /-1;
+  width: 100%;
+}
+
+.tabel-laporan thead th {
+  background-color: #fff;
+}
+
+.tabel-laporan tr {
+  border-buttom: 1px solid #eaecf0;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  box-shadow: 0rem 0.6rem 0.6rem 0rem rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  z-index: 99999999;
+  color: white;
+  transition: all 0.5s;
+}
+
+.sticky .nav-link a:link,
+.sticky .nav-link a:visited {
+  color: white !important;
+}
+
+.sticky .btn-login,
+.sticky .btn-registrasi {
+  color: white;
+}
+
+.sticky .btn-login {
+  color: var(--color-dark);
+}
+
+.sticky .btn-login:hover {
+  color: white;
+}
+
+/************************/
+/* TAMBAH DATA */
+/************************/
+
+.modal-tambah-data-nasabah {
+  top: 40%;
+  right: 1%;
+  transform: translateY(-50%);
+}
+
+.modal-tambah-data-transaksi {
+  top: 67%;
+  right: 30%;
+  transform: translateY(-50%);
+}
+
+.btn-close,
+.btn-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+  transform: translate(-10%, 10%);
+}
+
+.add-nasabah-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+  color: var(--color-dark);
+}
+
+.btn-update-data,
+.btn-delete-data {
+  background: none;
+  border: none;
+  text-decoration: none;
+}
+
+.modal-edit-data-pegawai {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.searching {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  flex-direction: row !important;
+}
+
+.btn-search {
+  background-color: var(--color-medium);
+  padding: 1rem 2rem;
+}
+
+.modal {
+  height: 100vh;
+}
